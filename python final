@@ -1,0 +1,359 @@
+
+print("to start the program press enter")
+input("press enter")
+
+
+
+
+def lesson_chapter1_introduction_to_computing():
+    print("==== chapter 1 introduction to computing ====")
+    print("the introduction to computing is like on the title")
+    print("python is one of the simplest way to program and best to start a program")
+    print("example")
+    print("print('hello world')")
+
+
+def chapter2_python_basic_syntax():
+    print("==== chapter 2 python basic syntax ====")
+    print("python basic syntax is the python code for creating program like variable, comments, interger")
+    print("example")
+    print("(hello world) and (welcome to python)")
+    print("age = 25")
+    print("age = float(25)")
+
+    print("let's try:")
+    name = input("enter your name: ")
+    age = int(input("enter your age: "))
+    print("your name is", name)
+    print("your age is", age)
+
+
+
+def chapter3_arithmetic_operators_and_expresion():
+    print("==== chapter 3 arithmetic operators and expression ====")
+    print("arithmetic operators is the string to compute the number in programing")
+    print("example of that is:")
+    print("addition (+)")
+    print("subtraction (-)")
+    print("multiplication (*)")
+    print("division (/)")
+    print("floor division (//)")
+    print("modulus (%)")
+    print("exponent (**)")
+    print("example of this is:")
+    print("a = 2")
+    print("b = 4")
+    print("print(a + b)")
+
+    a = 20
+    b = 50
+    c = 2
+    
+    answer = float(input("what is the answer?:"))
+
+
+def chapter4_basic_input_output_in_python():
+    print("==== chapter 4 basic input and output in python ====")
+    print("basic input and output like on the title the input is allow the user to input a information")
+    print("and the output is the display result of the information")
+    print("example of this is")
+    print("name = input('enter your name: ')")
+    print("age = input('enter your age: ')")
+
+    print("let's try:")
+    name = input("enter your name: ")
+    age = input("enter your age: ")
+    print("your name is", name)
+    print("your age is", age)
+
+
+
+
+def introduction_to_conditional_statement():
+    print("introduction to conditional statements")
+    print("conditional statement is used when the program is need to make decision base on condition")
+
+
+def relational_operators():
+    print("==== 1 relational operators ====")
+    print("these operator is compare two values")
+    print("example")
+    print("== is equal to")
+    print("!= is not equal to")
+    print("> is greater than")
+    print("< is less than")
+    print(">= is greater than or equal to")
+    print("<= is less than or equal to")
+
+    a = int(input("enter first number: "))
+    b = int(input("enter second number: "))
+
+    print("a == b:", a == b)
+    print("a != b:", a != b)
+    print("a > b:", a > b)
+    print("a < b:", a < b)
+    print("a >= b:", a >= b)
+    print("a <= b:", a <= b)
+
+
+def conditional_statements():
+    print("==== 2 the if statement ====")
+    print("if statement is used when the condition is true")
+    print("example")
+    print("age = 18")
+    print("if age >= 18:")
+    print("    print('you are adult')")
+
+    age = int(input("enter your age: "))
+
+    if age >= 18:
+        print("you are adult")
+
+    print("==== 3 the if-else statement ====")
+    print("if else statement is used when there are two possible results")
+    print("example")
+    print("if age >= 18:")
+    print("print('you are adult')")
+    print("else:")
+    print("print('you are not adult')")
+
+    age = int(input("enter your age: "))
+
+    if age >= 18:
+        print("you are adult")
+    else:
+        print("you are not adult")
+
+    print("==== 4 the if-elif-else statement ====")
+    print("if elif else is used when there are many conditions")
+    print("example")
+    print("if grade >= 90:")
+    print("print('excellent')")
+    print("elif grade >= 75:")
+    print("print('passed')")
+    print("else:")
+    print("    print('failed')")
+
+    grade = int(input("enter your grade: "))
+
+    if grade >= 90:
+        print("excellent")
+    elif grade >= 75:
+        print("passed")
+    else:
+        print("failed")
+
+    print("==== 5 nested condition ====")
+    print("nested condition is an if statement inside another if statement")
+    print("example")
+    print("if age >= 18:")
+    print("if age <= 30:")
+    print("print('you are allowed')")
+
+    age = int(input("enter your age: "))
+
+    if age >= 18:
+        if age <= 30:
+            print("you are allowed")
+        else:
+            print("you are above 30")
+    else:
+        print("you are too young")
+
+
+def logical_operators():
+    print("==== logical operators ====")
+    print("logical operators are used to combine conditions")
+    print("there are three types of logical operators")
+    print("and, or, and not")
+
+    print("==== 1 and operator ====")
+    print("and operator is true when both conditions are true")
+    print("truth table")
+    print("true and true = true")
+    print("true and false = false")
+    print("false and true = false")
+    print("false and false = false")
+
+    print("==== 2 or operator ====")
+    print("or operator is true when at least one condition is true")
+    print("truth table")
+    print("true or true = true")
+    print("true or false = true")
+    print("false or true = true")
+    print("false or false = false")
+
+    print("==== 3 not operator ====")
+    print("not operator changes the result into the opposite")
+    print("truth table")
+    print("not true = false")
+    print("not false = true")
+
+
+
+
+def iteration():
+    print("==== 1 iteration ====")
+    print("iteration means repeating a set of instructions")
+    print("it helps the program repeat a code many times")
+
+
+def types_of_loops():
+    print("====2 types of loops ====")
+
+    print("a for loop")
+    print("for loop is used to repeat a code a certain number of times")
+    print("example")
+    print("for i in range(5):")
+    print("print('hello')")
+
+    limit = int(input("enter how many times to repeat: "))
+
+    for i in range(limit):
+        print("hello")
+
+    print("b while loop")
+    print("while loop repeats the code while the condition is true")
+    print("example")
+    print("x = 1")
+    print("while x <= 5:")
+    print("print(x)")
+    print("x = x + 1")
+
+    limit = int(input("enter to count (1-100): "))
+    count = 1
+
+    while count <= limit:
+        print(count)
+        count += 1
+
+    print("we're done in loop")
+
+
+
+
+def simple_quiz():
+    print("=" * 29)
+    print("       final simple quiz      ")
+    print("=" * 29)
+
+    score = 0
+
+    quest1 = input("1 what function is used to display output? (print/input): ").lower()
+    if quest1 == "print":
+        print("correct")
+        score += 1
+    else:
+        print("wrong the answer is print")
+
+    quest2 = input("2 what symbol is used for addition? (+/-): ")
+    if quest2 == "+":
+        print("correct")
+        score += 1
+    else:
+        print("wrong the answer is +")
+
+    quest3 = input("3 which keyword is used for decision making? (if/for): ").lower()
+    if quest3 == "if":
+        print("correct")
+        score += 1
+    else:
+        print("wrong the answer is if")
+
+    quest4 = input("4 which operator means both must be true? (and/or): ").lower()
+    if quest4 == "and":
+        print("correct")
+        score += 1
+    else:
+        print("wrong the answer is and")
+
+    quest5 = input("5 which loop repeats while the condition is true? (for/while): ").lower()
+    if quest5 == "while":
+        print("correct")
+        score += 1
+    else:
+        print("wrong the answer is while")
+
+    print("your score:", score, "/5")
+
+    if score == 5:
+        print("you learn nicee")
+    elif score >= 3:
+        print("nice but try more")
+    else:
+        print("nice try but you can learn more")
+
+
+
+
+while True:
+    print("=" * 31)
+    print("=====welcome to my program=====")
+    print("=" * 31)
+
+    print("prelim")
+    print("1. chapter 1 - introduction to programming")
+    print("2. chapter 2 - python basic syntax")
+    print("3. chapter 3 - arithmetic operators and expressions")
+    print("4. chapter 4 - basic input and output in python")
+
+    print("midterm")
+    print("5. relational operators")
+    print("6. introduction to conditional statements")
+    print("7. logical operators")
+
+    print("finals")
+    print("8. iteration")
+    print("9. types of loops - for loop and while loop")
+
+    print("10. if statement")
+    print("11. if-else statement")
+    print("12. if elif else statement")
+    print("13. nested condition")
+    print("14. and, or, and not operators")
+
+    print("15. final simple quiz")
+    print("16. exit")
+
+    choice = input("choose a number (1-16): ")
+
+    if choice == "1":
+        lesson_chapter1_introduction_to_computing()
+    elif choice == "2":
+        chapter2_python_basic_syntax()
+    elif choice == "3":
+        chapter3_arithmetic_operators_and_expresion()
+    elif choice == "4":
+        chapter4_basic_input_output_in_python()
+    elif choice == "5":
+        relational_operators()
+    elif choice == "6":
+        introduction_to_conditional_statement()
+        conditional_statements()
+    elif choice == "7":
+        logical_operators()
+    elif choice == "8":
+        iteration()
+    elif choice == "9":
+        types_of_loops()
+    elif choice == "10":
+        conditional_statements()
+    elif choice == "11":
+        conditional_statements()
+    elif choice == "12":
+        conditional_statements()
+    elif choice == "13":
+        conditional_statements()
+    elif choice == "14":
+        logical_operators()
+    elif choice == "15":
+        simple_quiz()
+    elif choice == "16":
+        print("thank you for listening and good after noon")
+        break
+    else:
+        print("invalid choice, please choose from 1-16")
+        continue
+
+    input("press enter to go back to menu")
+    
